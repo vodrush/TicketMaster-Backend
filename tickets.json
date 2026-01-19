@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "title": "Bug bouton login",
+    "description": "Le bouton de connexion ne r\u00c3\u00a9pond pas sur mobile (Android).",
+    "priority": "High",
+    "status": "Closed",
+    "tags": [
+      "bug",
+      "ui",
+      "mobile"
+    ],
+    "createdAt": "2026-01-16"
+  },
+  {
+    "id": 2,
+    "title": "Ajouter un filtre par priorit\u00c3\u00a9",
+    "description": "Permettre de filtrer les tickets par priorit\u00c3\u00a9 (Low, Medium, High) sur la page liste.",
+    "priority": "Medium",
+    "status": "In progress",
+    "tags": [
+      "feature",
+      "ux"
+    ],
+    "createdAt": "2026-01-15"
+  },
+  {
+    "id": 3,
+    "title": "Erreur 500 sur /checkout",
+    "description": "Certaines commandes d\u00c3\u00a9clenchent une erreur serveur lors du paiement.",
+    "priority": "High",
+    "status": "Open",
+    "tags": [
+      "bug",
+      "backend",
+      "payment"
+    ],
+    "createdAt": "2026-01-14"
+  },
+  {
+    "id": 4,
+    "title": "Refactor composant Header",
+    "description": "S\u00c3\u00a9parer le header en composants r\u00c3\u00a9utilisables et ajouter tests.",
+    "priority": "Low",
+    "status": "In progress",
+    "tags": [
+      "chore",
+      "frontend"
+    ],
+    "createdAt": "2026-01-10"
+  },
+  {
+    "id": 5,
+    "title": "Internationalisation FR/EN",
+    "description": "Ajouter la prise en charge de l'anglais pour l'interface.",
+    "priority": "Medium",
+    "status": "Open",
+    "tags": [
+      "feature",
+      "i18n"
+    ],
+    "createdAt": "2026-01-12"
+  },
+  {
+    "id": 6,
+    "title": "Optimiser les images",
+    "description": "Compresser les images et ajouter lazy-loading pour acc\u00c3\u00a9l\u00c3\u00a9rer les pages.",
+    "priority": "Low",
+    "status": "Closed",
+    "tags": [
+      "performance",
+      "frontend"
+    ],
+    "createdAt": "2026-01-08"
+  },
+  {
+    "id": 7,
+    "title": "Connexion OAuth Google",
+    "description": "Permettre aux utilisateurs de se connecter via Google OAuth.",
+    "priority": "Medium",
+    "status": "Open",
+    "tags": [
+      "feature",
+      "auth"
+    ],
+    "createdAt": "2026-01-13"
+  },
+  {
+    "id": 8,
+    "title": "Mettre \u00c3\u00a0 jour d\u00c3\u00a9pendances",
+    "description": "Passer les packages \u00c3\u00a0 leurs derni\u00c3\u00a8res versions compatibles.",
+    "priority": "Low",
+    "status": "In progress",
+    "tags": [
+      "chore",
+      "deps"
+    ],
+    "createdAt": "2026-01-11"
+  },
+  {
+    "id": 9,
+    "title": "Ajouter pagination pour la liste",
+    "description": "Impl\u00c3\u00a9menter pagination c\u00c3\u00b4t\u00c3\u00a9 backend et frontend pour la liste de tickets.",
+    "priority": "Medium",
+    "status": "Open",
+    "tags": [
+      "feature",
+      "api"
+    ],
+    "createdAt": "2026-01-09"
+  },
+  {
+    "id": 10,
+    "title": "Tests end-to-end",
+    "description": "\u00c3\u2030crire quelques tests E2E pour les sc\u00c3\u00a9narios critiques.",
+    "priority": "High",
+    "status": "Open",
+    "tags": [
+      "test",
+      "e2e"
+    ],
+    "createdAt": "2026-01-07"
+  }
+]
