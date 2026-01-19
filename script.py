@@ -31,5 +31,4 @@ def sort_tickets(tickets, key='createdAt', reverse=False):
     sorted(tickets, key=lambda x: x[key], reverse=reverse)
     key= 'priority' or 'createdAt'
     reverse= False
-    # Retourne la liste triée
-    pass
+    return sorted(tickets, key=lambda x: x[key], reverse=reverse)
