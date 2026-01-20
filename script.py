@@ -1,14 +1,15 @@
+# -*- coding: utf-8 -*-
 import json
 import datetime
 
 def load_tickets(filepath):
-    with open(filepath, 'r') as file:
+    with open(filepath, 'r', encoding='utf-8') as file: 
         tickets = json.load(file)
     return tickets
 
 def save_tickets(filepath, tickets):
-    with open(filepath, 'w') as file:
-        json.dump(tickets, file, indent=2)
+    with open(filepath, 'w', encoding='utf-8') as file: 
+        json.dump(tickets, file, indent=2, ensure_ascii=False)  
     return tickets
 
 def count_by_status(tickets):

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from script import add_ticket, load_tickets, save_tickets , count_by_status, filter_tickets, sort_tickets, update_ticket
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware

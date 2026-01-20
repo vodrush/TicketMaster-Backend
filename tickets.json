@@ -1,8 +1,8 @@
 [
   {
     "id": 2,
-    "title": "Ajouter un filtre par priorit\u00c3\u00a9",
-    "description": "Permettre de filtrer les tickets par priorit\u00c3\u00a9 (Low, Medium, High) sur la page liste.",
+    "title": "Ajouter un filtre par priorité",
+    "description": "Permettre de filtrer les tickets par priorité (Low, Medium, High) sur la page liste.",
     "priority": "Medium",
     "status": "In progress",
     "tags": [
@@ -15,7 +15,7 @@
   {
     "id": 3,
     "title": "Erreur 500 sur /checkout",
-    "description": "Certaines commandes d\u00c3\u00a9clenchent une erreur serveur lors du paiement.",
+    "description": "Certaines commandes déclenchent une erreur serveur lors du paiement.",
     "priority": "High",
     "status": "Open",
     "tags": [
@@ -28,7 +28,7 @@
   {
     "id": 4,
     "title": "Refactor composant Header",
-    "description": "S\u00c3\u00a9parer le header en composants r\u00c3\u00a9utilisables et ajouter tests.",
+    "description": "Séparer le header en composants réutilisables et ajouter tests.",
     "priority": "Low",
     "status": "In progress",
     "tags": [
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "title": "Optimiser les images",
-    "description": "Compresser les images et ajouter lazy-loading pour acc\u00c3\u00a9l\u00c3\u00a9rer les pages.",
+    "description": "Compresser les images et ajouter lazy-loading pour accélérer les pages.",
     "priority": "Low",
     "status": "Closed",
     "tags": [
@@ -75,8 +75,8 @@
   },
   {
     "id": 8,
-    "title": "Mettre \u00c3\u00a0 jour d\u00c3\u00a9pendances",
-    "description": "Passer les packages \u00c3\u00a0 leurs derni\u00c3\u00a8res versions compatibles.",
+    "title": "Mettre à jour dépendances",
+    "description": "Passer les packages à leurs dernières versions compatibles.",
     "priority": "Low",
     "status": "In progress",
     "tags": [
@@ -88,7 +88,7 @@
   {
     "id": 9,
     "title": "Ajouter pagination pour la liste",
-    "description": "Impl\u00c3\u00a9menter pagination c\u00c3\u00b4t\u00c3\u00a9 backend et frontend pour la liste de tickets.",
+    "description": "Implémenter pagination côté backend et frontend pour la liste de tickets.",
     "priority": "Medium",
     "status": "Open",
     "tags": [
@@ -100,7 +100,7 @@
   {
     "id": 10,
     "title": "Tests end-to-end",
-    "description": "\u00c3\u2030crire quelques tests E2E pour les sc\u00c3\u00a9narios critiques.",
+    "description": "Écrire quelques tests E2E pour les scénarios critiques.",
     "priority": "High",
     "status": "Open",
     "tags": [
