@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Bug bouton login",
-    "description": "Le bouton de connexion ne r\u00c3\u00a9pond pas sur mobile (Android).",
-    "priority": "high",
-    "status": "Open",
-    "tags": [
-      "bug",
-      "ui",
-      "mobile"
-    ],
-    "createdAt": "2026-01-16",
-    "updatedAt": "2026-01-20T09:44:42.694375Z"
-  },
-  {
     "id": 2,
     "title": "Ajouter un filtre par priorit\u00c3\u00a9",
     "description": "Permettre de filtrer les tickets par priorit\u00c3\u00a9 (Low, Medium, High) sur la page liste.",
@@ -147,5 +133,23 @@
       "test",
       "api"
     ]
+  },
+  {
+    "id": 13,
+    "createdAt": "2026-01-20T10:44:52.722680Z",
+    "updatedAt": "2026-01-20T10:44:52.722696Z",
+    "title": "New Ticket",
+    "description": "Description here",
+    "status": "open"
+  },
+  {
+    "id": 14,
+    "createdAt": "2026-01-20T11:20:09.058232Z",
+    "updatedAt": "2026-01-20T11:20:09.058247Z",
+    "title": "t",
+    "description": "t",
+    "status": "in_progress",
+    "priority": "medium",
+    "tags": []
   }
 ]
