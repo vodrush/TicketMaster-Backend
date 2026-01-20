@@ -3,14 +3,15 @@
     "id": 1,
     "title": "Bug bouton login",
     "description": "Le bouton de connexion ne r\u00c3\u00a9pond pas sur mobile (Android).",
-    "priority": "High",
-    "status": "Closed",
+    "priority": "high",
+    "status": "Open",
     "tags": [
       "bug",
       "ui",
       "mobile"
     ],
-    "createdAt": "2026-01-16"
+    "createdAt": "2026-01-16",
+    "updatedAt": "2026-01-20T09:44:42.694375Z"
   },
   {
     "id": 2,
@@ -120,5 +121,31 @@
       "e2e"
     ],
     "createdAt": "2026-01-07"
+  },
+  {
+    "id": 11,
+    "createdAt": "2024-06-01T12:00:00Z",
+    "updatedAt": "2024-06-01T12:00:00Z",
+    "title": "New Issue",
+    "description": "Description of the new issue",
+    "status": "open",
+    "priority": "high",
+    "tags": [
+      "bug",
+      "urgent"
+    ]
+  },
+  {
+    "id": 12,
+    "createdAt": "2026-01-20T09:47:45.726275Z",
+    "updatedAt": "2026-01-20T10:52:34.788234Z",
+    "title": "Mon nouveau ticket",
+    "description": "Une description",
+    "status": "Closed",
+    "priority": "Medium",
+    "tags": [
+      "test",
+      "api"
+    ]
   }
 ]

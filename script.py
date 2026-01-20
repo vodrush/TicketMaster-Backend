@@ -1,4 +1,5 @@
 import json
+import datetime
 
 def load_tickets(filepath):
     with open(filepath, 'r') as file:
@@ -8,6 +9,7 @@ def load_tickets(filepath):
 def save_tickets(filepath, tickets):
     with open(filepath, 'w') as file:
         json.dump(tickets, file, indent=2)
+    return tickets
 
 def count_by_status(tickets):
     status = {}
@@ -28,7 +30,21 @@ def filter_tickets(tickets, status=None, priority=None, tag=None):
     return filtered
 
 def sort_tickets(tickets, key='createdAt', reverse=False):
-    sorted(tickets, key=lambda x: x[key], reverse=reverse)
-    key= 'priority' or 'createdAt'
-    reverse= False
     return sorted(tickets, key=lambda x: x[key], reverse=reverse)
+
+def add_ticket(tickets, ticket_data):
+    max_id = max(ticket['id'] for ticket in tickets) if tickets else 0
+    new_ticket = {
+        'id': max_id + 1,
+        'createdAt': datetime.datetime.utcnow().isoformat() + 'Z',
+        'updatedAt': datetime.datetime.utcnow().isoformat() + 'Z',  # Exemple de date/heure actuelle
+        **ticket_data
+    }         
+    tickets.append(new_ticket)
+    return new_ticket
+def update_ticket(tickets, ticket_id, changes):
+    for ticket in tickets:
+        if ticket['id'] == ticket_id:
+            ticket.update(changes)
+            ticket['updatedAt'] = (datetime.datetime.utcnow() + datetime.timedelta(hours=1)).isoformat() + 'Z'
+            return ticket  
