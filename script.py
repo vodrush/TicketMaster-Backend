@@ -38,7 +38,7 @@ def add_ticket(tickets, ticket_data):
     new_ticket = {
         'id': max_id + 1,
         'createdAt': datetime.datetime.utcnow().isoformat() + 'Z',
-        'updatedAt': datetime.datetime.utcnow().isoformat() + 'Z',  # Exemple de date/heure actuelle
+        'updatedAt': datetime.datetime.utcnow().isoformat() + 'Z',  
         **ticket_data
     }         
     tickets.append(new_ticket)

@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
-from script import add_ticket, load_tickets, save_tickets , count_by_status, filter_tickets, sort_tickets, update_ticket
+from Backend.script import add_ticket, load_tickets, save_tickets, count_by_status, filter_tickets, sort_tickets, update_ticket
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-from script import load_tickets, save_tickets, add_ticket, update_ticket, filter_tickets, count_by_status, sort_tickets
 
 
 tickets = load_tickets('backend/tickets.json')
 app = FastAPI()
 
-# Ajouter CORS (pour que le frontend puisse appeler l'API)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -48,4 +46,5 @@ def delete_ticket(ticket_id: int):
     return {"detail": "Ticket deleted"}
 
 if __name__ == "__main__":
+    import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
