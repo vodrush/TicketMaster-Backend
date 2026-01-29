@@ -4,13 +4,13 @@
     "title": "Ajouter un filtre par priorité",
     "description": "Permettre de filtrer les tickets par priorité (Low, Medium, High) sur la page liste.",
     "priority": "Medium",
-    "status": "In progress",
+    "status": "In Progress",
     "tags": [
       "feature",
       "ux"
     ],
     "createdAt": "2026-01-15",
-    "updatedAt": "2026-01-20T14:01:46.889725Z"
+    "updatedAt": "2026-01-29T10:31:07.689051Z"
   },
   {
     "id": 3,
@@ -30,12 +30,13 @@
     "title": "Refactor composant Header",
     "description": "Séparer le header en composants réutilisables et ajouter tests.",
     "priority": "Low",
-    "status": "In progress",
+    "status": "In Progress",
     "tags": [
       "chore",
       "frontend"
     ],
-    "createdAt": "2026-01-10"
+    "createdAt": "2026-01-10",
+    "updatedAt": "2026-01-29T10:31:10.946386Z"
   },
   {
     "id": 5,
@@ -78,12 +79,13 @@
     "title": "Mettre à jour dépendances",
     "description": "Passer les packages à leurs dernières versions compatibles.",
     "priority": "Low",
-    "status": "In progress",
+    "status": "In Progress",
     "tags": [
       "chore",
       "deps"
     ],
-    "createdAt": "2026-01-11"
+    "createdAt": "2026-01-11",
+    "updatedAt": "2026-01-29T10:31:14.259995Z"
   },
   {
     "id": 9,
@@ -111,14 +113,39 @@
   },
   {
     "id": 11,
-    "createdAt": "2026-01-20T13:26:00.803966Z",
-    "updatedAt": "2026-01-20T13:26:00.803977Z",
-    "title": "Petit soucis",
-    "description": "Charlie kirk et eipstein se batte",
+    "createdAt": "2026-01-29T08:58:09.903494Z",
+    "updatedAt": "2026-01-29T08:58:09.903494Z",
+    "title": "Ajouter une popup pour les changement",
+    "description": "Il faut ajouter une popup a chaque changement, ajout tickets ,delete etc",
     "status": "Open",
-    "priority": "High",
+    "priority": "Medium",
     "tags": [
-      "Urgent"
+      "feature",
+      "ux"
+    ]
+  },
+  {
+    "id": 12,
+    "createdAt": "2026-01-29T09:14:15.356325Z",
+    "updatedAt": "2026-01-29T09:14:15.356325Z",
+    "title": "t",
+    "description": "t",
+    "status": "Open",
+    "priority": "Medium",
+    "tags": [
+      "t"
+    ]
+  },
+  {
+    "id": 13,
+    "createdAt": "2026-01-29T09:30:39.753109Z",
+    "updatedAt": "2026-01-29T10:31:17.560004Z",
+    "title": "t",
+    "description": "t",
+    "status": "In Progress",
+    "priority": "Medium",
+    "tags": [
+      "t"
     ]
   }
 ]
