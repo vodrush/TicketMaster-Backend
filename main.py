@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
-from Backend.script import add_ticket, load_tickets, save_tickets, count_by_status, filter_tickets, sort_tickets, update_ticket
+from script import add_ticket, load_tickets, save_tickets, count_by_status, filter_tickets, sort_tickets, update_ticket
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import status
 import uvicorn
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TICKETS_FILE = os.path.join(BASE_DIR, 'tickets.json')
 
-tickets = load_tickets('backend/tickets.json')
+tickets = load_tickets(TICKETS_FILE)
 app = FastAPI()
 
 app.add_middleware(
