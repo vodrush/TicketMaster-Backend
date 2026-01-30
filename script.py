@@ -31,7 +31,7 @@ def filter_tickets(tickets, status=None, priority=None, tag=None):
     return filtered
 
 def sort_tickets(tickets, key='createdAt', reverse=False):
-    return sorted(tickets, key=lambda x: x[key], reverse=reverse)
+    return sorted(tickets, key=lambda x: x.get(key, ''), reverse=reverse)
 
 def add_ticket(tickets, ticket_data):
     max_id = max(ticket['id'] for ticket in tickets) if tickets else 0
@@ -47,5 +47,5 @@ def update_ticket(tickets, ticket_id, changes):
     for ticket in tickets:
         if ticket['id'] == ticket_id:
             ticket.update(changes)
-            ticket['updatedAt'] = (datetime.datetime.utcnow() + datetime.timedelta(hours=1)).isoformat() + 'Z'
+            ticket['updatedAt'] = datetime.datetime.utcnow().isoformat() + 'Z'
             return ticket  

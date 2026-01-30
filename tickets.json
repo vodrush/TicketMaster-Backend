@@ -1,7 +1,7 @@
 [
   {
     "id": 2,
-    "title": "Ajouter un filtre par priorité",
+    "title": "Ajouter un filtre par prioritée",
     "description": "Permettre de filtrer les tickets par priorité (Low, Medium, High) sur la page liste.",
     "priority": "Medium",
     "status": "In Progress",
@@ -10,20 +10,21 @@
       "ux"
     ],
     "createdAt": "2026-01-15",
-    "updatedAt": "2026-01-29T10:31:07.689051Z"
+    "updatedAt": "2026-01-30T11:19:50.460720Z"
   },
   {
     "id": 3,
     "title": "Erreur 500 sur /checkout",
-    "description": "Certaines commandes déclenchent une erreur serveur lors du paiement.",
+    "description": "Certaines commandes déclenchent une erreur serveur lors du paiement.\n",
     "priority": "High",
-    "status": "Open",
+    "status": "In Progress",
     "tags": [
       "bug",
       "backend",
       "payment"
     ],
-    "createdAt": "2026-01-14"
+    "createdAt": "2026-01-14",
+    "updatedAt": "2026-01-30T11:19:53.266847Z"
   },
   {
     "id": 4,
@@ -55,12 +56,13 @@
     "title": "Optimiser les images",
     "description": "Compresser les images et ajouter lazy-loading pour accélérer les pages.",
     "priority": "Low",
-    "status": "Closed",
+    "status": "In Progress",
     "tags": [
       "performance",
       "frontend"
     ],
-    "createdAt": "2026-01-08"
+    "createdAt": "2026-01-08",
+    "updatedAt": "2026-01-30T11:06:59.400458Z"
   },
   {
     "id": 7,
@@ -122,30 +124,6 @@
     "tags": [
       "feature",
       "ux"
-    ]
-  },
-  {
-    "id": 12,
-    "createdAt": "2026-01-29T09:14:15.356325Z",
-    "updatedAt": "2026-01-29T09:14:15.356325Z",
-    "title": "t",
-    "description": "t",
-    "status": "Open",
-    "priority": "Medium",
-    "tags": [
-      "t"
-    ]
-  },
-  {
-    "id": 13,
-    "createdAt": "2026-01-29T09:30:39.753109Z",
-    "updatedAt": "2026-01-29T10:31:17.560004Z",
-    "title": "t",
-    "description": "t",
-    "status": "In Progress",
-    "priority": "Medium",
-    "tags": [
-      "t"
     ]
   }
 ]

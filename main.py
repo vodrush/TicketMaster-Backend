@@ -36,7 +36,7 @@ def create_ticket(ticket_data: dict):
         if field not in ticket_data:
             raise HTTPException(status_code=400, detail=f"Missing field: {field}")
     new_ticket = add_ticket(tickets, ticket_data)
-    save_tickets('backend/tickets.json', tickets)
+    save_tickets(TICKETS_FILE, tickets)
     return new_ticket
 
 @app.patch("/tickets/{ticket_id}")
@@ -46,7 +46,7 @@ def modify_ticket(ticket_id: int, changes: dict):
     updated_ticket = update_ticket(tickets, ticket_id, changes)
     if not updated_ticket:
         raise HTTPException(status_code=404, detail="Ticket not found")
-    save_tickets('backend/tickets.json', tickets)
+    save_tickets(TICKETS_FILE, tickets)
     return updated_ticket
 
 @app.delete("/tickets/{ticket_id}")
@@ -55,7 +55,7 @@ def delete_ticket(ticket_id: int):
     if ticket_id not in [t['id'] for t in tickets]:
         raise HTTPException(status_code=404, detail="Ticket not found")
     tickets = [t for t in tickets if t['id'] != ticket_id]
-    save_tickets('backend/tickets.json', tickets)
+    save_tickets(TICKETS_FILE, tickets)
     return {"detail": "Ticket deleted"}
 
 if __name__ == "__main__":
