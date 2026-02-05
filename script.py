@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import json
 import datetime
 
@@ -11,15 +10,6 @@ def save_tickets(filepath, tickets):
     with open(filepath, 'w', encoding='utf-8') as file: 
         json.dump(tickets, file, indent=2, ensure_ascii=False)  
     return tickets
-
-def count_by_status(tickets):
-    status = {}
-    for ticket in tickets:
-        stat = ticket['status']
-        if stat not in status:
-            status[stat] = 0
-        status[stat] += 1
-    return status
 
 def filter_tickets(tickets, status=None, priority=None, tag=None):
     filtered = []

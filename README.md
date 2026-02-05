@@ -5,6 +5,7 @@ API REST pour gérer des tickets. Construit avec **FastAPI** et **Python**.
 ## Installation
 
 ### Prérequis
+
 - Python 3.8+
 - pip
 
@@ -23,9 +24,11 @@ Le serveur démarre sur `http://localhost:8000`
 ## Endpoints API
 
 ### GET /tickets
+
 Retourne tous les tickets avec filtres optionnels.
 
 **Paramètres (optionnels):**
+
 - `status` : "Open", "In Progress", "Closed"
 - `priority` : "Low", "Medium", "High"
 - `tag` : nom du tag
@@ -33,14 +36,17 @@ Retourne tous les tickets avec filtres optionnels.
 - `descending` : true/false
 
 **Exemple:**
+
 ```bash
 curl http://localhost:8000/tickets?status=Open&sort_by=priority
 ```
 
 ### POST /tickets
+
 Crée un nouveau ticket.
 
 **Body (JSON):**
+
 ```json
 {
   "title": "Nom du ticket",
@@ -52,6 +58,7 @@ Crée un nouveau ticket.
 ```
 
 **Exemple:**
+
 ```bash
 curl -X POST http://localhost:8000/tickets \
   -H "Content-Type: application/json" \
@@ -59,12 +66,14 @@ curl -X POST http://localhost:8000/tickets \
 ```
 
 ### PATCH /tickets/{id}
+
 Modifie un ticket existant.
 
 **Body (JSON):**
 N'importe quel champ du ticket.
 
 **Exemple:**
+
 ```bash
 curl -X PATCH http://localhost:8000/tickets/1 \
   -H "Content-Type: application/json" \
@@ -72,9 +81,11 @@ curl -X PATCH http://localhost:8000/tickets/1 \
 ```
 
 ### DELETE /tickets/{id}
+
 Supprime un ticket.
 
 **Exemple:**
+
 ```bash
 curl -X DELETE http://localhost:8000/tickets/1
 ```
@@ -92,19 +103,22 @@ curl -X DELETE http://localhost:8000/tickets/1
 ## Fichiers principaux
 
 ### main.py
+
 Contient la configuration FastAPI et les 4 endpoints principaux.
 
 ### script.py
+
 Contient les fonctions pour manipuler les tickets :
+
 - `load_tickets(filepath)` : Charge les tickets
 - `save_tickets(filepath, tickets)` : Sauvegarde les tickets
 - `add_ticket(tickets, data)` : Ajoute un ticket (auto-incrémente l'ID)
 - `update_ticket(tickets, id, changes)` : Modifie un ticket
 - `filter_tickets(tickets, status, priority, tag)` : Filtre les tickets
 - `sort_tickets(tickets, key, reverse)` : Trie les tickets
-- `count_by_status(tickets)` : Compte par statut
 
 ### tickets.json
+
 Fichier JSON contenant la liste des tickets. Structure d'un ticket :
 
 ```json

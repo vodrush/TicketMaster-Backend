@@ -49,7 +49,8 @@
       "feature",
       "i18n"
     ],
-    "createdAt": "2026-01-12"
+    "createdAt": "2026-01-12",
+    "updatedAt": "2026-01-30T14:44:38.747030Z"
   },
   {
     "id": 6,
@@ -87,7 +88,7 @@
       "deps"
     ],
     "createdAt": "2026-01-11",
-    "updatedAt": "2026-01-29T10:31:14.259995Z"
+    "updatedAt": "2026-01-30T14:56:17.469627Z"
   },
   {
     "id": 9,
@@ -124,6 +125,18 @@
     "tags": [
       "feature",
       "ux"
+    ]
+  },
+  {
+    "id": 12,
+    "createdAt": "2026-01-30T14:53:52.158584Z",
+    "updatedAt": "2026-01-30T15:08:39.154637Z",
+    "title": "t",
+    "description": "t",
+    "status": "Open",
+    "priority": "Medium",
+    "tags": [
+      "t"
     ]
   }
 ]
